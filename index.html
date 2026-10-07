@@ -185,6 +185,26 @@
   }
   .alt-link:hover{color:var(--line);}
 
+  /* TEASER */
+  .teaser{
+    margin-top:28px;
+    border:1px dashed var(--line-dim);
+    border-radius:var(--radius);
+    background:rgba(63,208,255,.04);
+    padding:20px 18px;
+    text-align:center;
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    font-size:16px;
+    font-weight:600;
+    animation:glowPulse 3.2s ease-in-out infinite;
+  }
+  .teaser .em{display:inline-block;animation:bob 2s ease-in-out infinite;}
+  .teaser .em:nth-child(even){animation-delay:.4s;}
+  @keyframes bob{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-4px);}
+  }
+
   /* CONNECT — compact, one card, no per-step buttons */
   .connect-card{
     border:1px solid var(--card-line);
@@ -277,6 +297,7 @@
 
   @media (prefers-reduced-motion: reduce){
     *{transition-duration:.01ms !important;}
+    .teaser,.teaser .em{animation:none !important;}
   }
 </style>
 </head>
@@ -351,6 +372,10 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="teaser">
+      <span class="em">👀</span> Здесь будет кое-что интересное <span class="em">✨</span><span class="em">🚀</span>
     </div>
   </section>
 
@@ -430,4 +455,4 @@ if('IntersectionObserver' in window){
 }
 </script>
 </body>
-</html>
+        </html>
