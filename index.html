@@ -103,6 +103,22 @@
   .tg:active{transform:translateY(0) scale(.97);}
   .tg .dot{width:6px;height:6px;border-radius:50%;background:var(--line);animation:blink 2s ease-in-out infinite;}
 
+  .donate{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    width:fit-content;margin:12px auto 0;padding:11px 20px;
+    border:1px solid var(--line);
+    border-radius:11px;
+    background:rgba(63,208,255,.1);
+    color:var(--ink);text-decoration:none;
+    font-size:13px;font-weight:600;
+    transition:background .2s, transform .2s, box-shadow .2s;
+    opacity:0;
+    animation:riseIn .6s ease .45s forwards;
+  }
+  .donate:hover{background:rgba(63,208,255,.18);transform:translateY(-2px);box-shadow:0 8px 24px rgba(63,208,255,.18);}
+  .donate:active{transform:translateY(0) scale(.97);}
+  .donate .heart{display:inline-block;animation:bob 1.6s ease-in-out infinite;}
+
   @keyframes riseIn{
     from{opacity:0;transform:translateY(10px);}
     to{opacity:1;transform:translateY(0);}
@@ -314,6 +330,9 @@
     <a class="tg" href="https://t.me/PizMod" target="_blank" rel="noopener">
       <span class="dot"></span> Telegram · @PizMod
     </a>
+    <a class="donate" href="https://pay.cloudtips.ru/p/02dbe8fb" target="_blank" rel="noopener">
+      <span class="heart">💙</span> Поддержать <span>☕</span><span>🙏</span>
+    </a>
   </header>
 
   <section class="reveal">
@@ -455,4 +474,4 @@ if('IntersectionObserver' in window){
 }
 </script>
 </body>
-        </html>
+</html>
