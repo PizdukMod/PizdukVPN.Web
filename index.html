@@ -151,6 +151,7 @@
   .sub:nth-child(3){animation-delay:.19s;}
   .sub:nth-child(4){animation-delay:.26s;}
   .sub:nth-child(5){animation-delay:.33s;}
+  .sub:nth-child(6){animation-delay:.4s;}
   .sub{
     border:1px solid var(--card-line);
     border-radius:var(--radius);
@@ -351,6 +352,16 @@
 
       <div class="sub">
         <div class="sub-info">
+          <h3>ЧС · Кот Крошка</h3>
+          <p>Подписка от "Кот Крококошка" специально для PizdukVPN, ЧС</p>
+        </div>
+        <div class="sub-actions">
+          <button class="copy-btn" onclick="copySub(this,'https://raw.githubusercontent.com/MrMisha4048/pizdukspecial/refs/heads/main/vpn.txt')">Копировать</button>
+        </div>
+      </div>
+
+      <div class="sub">
+        <div class="sub-info">
           <h3>ЧС · Автовыбор</h3>
           <p>Подбирает рабочую конфигурацию сама</p>
         </div>
@@ -373,7 +384,7 @@
       <div class="sub">
         <div class="sub-info">
           <h3>БС · Автовыбор</h3>
-          <p>Автоматическая подписка с конфигурациями БС</p>
+          <p>Подбирает рабочую конфигурацию сама с конфигурациями БС</p>
         </div>
         <div class="sub-actions">
           <button class="alt-link" onclick="copySub(this,'https://gitverse.ru/api/repos/Pizduk/PizdukVPN/raw/branch/master/WaHapp')">альт.</button>
